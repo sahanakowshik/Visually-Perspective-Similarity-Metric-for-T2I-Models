@@ -9,12 +9,13 @@ This repository contains code to test different similarity metrics on Text-to-Im
 
 ### Similarity metrics compared
 
-1. Using L2 Norm
-$$similarity(v_1, v_2) = 1 - \|\hat{v_1} - \hat{v_2}\|_2$$
+1. Using $L^2$ Norm
+$$\operatorname{sim}(v_1, v_2) = 1 - \|\hat{v_1} - \hat{v_2}\|_2$$
 2. Cosine similarity
-$$similarity(v_1, v_2) = \frac{v_1.v_2}{\|v_1\|\|v_2\|}$$
+$$\operatorname{sim}(v_1, v_2) = \frac{v_1.v_2}{\|v_1\|\|v_2\|}$$
 
 ### Code
-
-The file `similarity_metric_test.ipynb` generates the feature vectors of the images and the same images with gaussian or uniform noise using the VGG16 model and compares their L2 Norm similarity scores.
-The file `stable_diffusion.ipynb` generates images from stable diffusion model given same or different prompts and compares the L2 Norm and cosine similarity scores.
+* `similarity_metric_test.ipynb`: generates the feature vectors of the images and the same images with gaussian or uniform noise using the VGG16 model and compares their $L^2$ Norm similarity scores.
+* `stable_diffusion.ipynb`: generates images from stable diffusion model given same or different prompts and compares the $L^2$ Norm and cosine similarity scores.
+* `dalle_2.ipynb`: generates images from dalle2 model given same or different prompts and compares the $L^2$ Norm and cosine similarity scores.
+* `stable_diffusion_intermediate_results.ipynb`: generates each iteration of output images from stable diffusion model and compares the $L^2$ Norm and cosine similarity scores between each consecutive images.
