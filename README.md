@@ -16,6 +16,7 @@ $$\operatorname{sim}(v_1, v_2) = \frac{v_1.v_2}{\|v_1\|\|v_2\|}$$
 
 ### Code
 * `similarity_metric_test.ipynb`: generates the feature vectors of the images and the same images with gaussian or uniform noise using the VGG16 model and compares their $L^2$ Norm similarity scores.
-* `stable_diffusion.ipynb`: generates images from stable diffusion model given same or different prompts and compares the $L^2$ Norm and cosine similarity scores.
-* `dalle_2.ipynb`: generates images from dalle2 model given same or different prompts and compares the $L^2$ Norm and cosine similarity scores.
-* `stable_diffusion_intermediate_results.ipynb`: generates each iteration of output images from stable diffusion model and compares the $L^2$ Norm and cosine similarity scores between each consecutive images.
+* `stable_diffusion/stable_diffusion_similarity.ipynb`: generates images from stable diffusion model given same or different prompts and compares the $L^2$ Norm and cosine similarity scores.
+* `dalle2/dalle_2.ipynb`: generates images from dalle2 model given same or different prompts.
+* `dalle2/Dall_E2_similarity.ipynb`: compares the $L^2$ Norm and cosine similarity scores.
+* `stable_diffusion/stable_diffusion_intermediate_results.ipynb`: generates each iteration of output images from stable diffusion model and compares the $L^2$ Norm and cosine similarity scores between each consecutive images.
