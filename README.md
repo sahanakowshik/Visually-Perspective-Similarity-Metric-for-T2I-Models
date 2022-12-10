@@ -13,6 +13,11 @@ This repository contains code to test different similarity metrics on Text-to-Im
 $$\operatorname{sim}(v_1, v_2) = 1 - \|\hat{v_1} - \hat{v_2}\|_2$$
 2. Cosine similarity
 $$\operatorname{sim}(v_1, v_2) = \frac{v_1.v_2}{\|v_1\|\|v_2\|}$$
+3. Incepion Score
+
+A pre-trained Inception v3 model is used to predict the class probabilities for each generated image. 
+KL divergence (relative entropy) between the conditional and marginal probability distributions is used to get the final score
+
 
 ### Code
 * `similarity_metric_test.ipynb`: generates the feature vectors of the images and the same images with gaussian or uniform noise using the VGG16 model and compares their $L^2$ Norm similarity scores.
